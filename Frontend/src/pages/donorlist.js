@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, useLocation } from "react-router-dom";
-<<<<<<< HEAD
 import API_BASE_URL from "../api";
-=======
->>>>>>> 225c65f905a4f8eb2552160748d31ad2abaa882a
 
 function DonorList() {
   const navigate = useNavigate();
@@ -46,11 +43,7 @@ function DonorList() {
       setLoading(true);
       setError("");
       const response = await axios.get(
-<<<<<<< HEAD
         `${API_BASE_URL}/api/DonorList/${bloodGroup}/${location}`,
-=======
-        `http://localhost:8080/api/DonorList/${bloodGroup}/${location}`,
->>>>>>> 225c65f905a4f8eb2552160748d31ad2abaa882a
         { timeout: 10000 }
       );
       setDonors(response.data);
@@ -96,11 +89,7 @@ function DonorList() {
 
       // Call your backend notification endpoint
       const response = await axios.post(
-<<<<<<< HEAD
         `${API_BASE_URL}/api/NotifyDonors`,
-=======
-        "http://localhost:8080/api/NotifyDonors",
->>>>>>> 225c65f905a4f8eb2552160748d31ad2abaa882a
         notifyRequest,
         {
           timeout: 60000,

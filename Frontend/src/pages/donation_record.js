@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-<<<<<<< HEAD
 import API_BASE_URL from "../api";
-=======
->>>>>>> 225c65f905a4f8eb2552160748d31ad2abaa882a
 
 function DonationRecord() {
   const navigate = useNavigate();
@@ -29,11 +26,7 @@ function DonationRecord() {
     setMessage("");
 
     try {
-<<<<<<< HEAD
       const response = await fetch(`${API_BASE_URL}/api/Donated`, {
-=======
-      const response = await fetch("http://localhost:8080/api/Donated", {
->>>>>>> 225c65f905a4f8eb2552160748d31ad2abaa882a
         method: "POST",
         headers: {
           "Content-Type": "application/json",

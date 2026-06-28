@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-<<<<<<< HEAD
 import API_BASE_URL from "../api";
-=======
->>>>>>> 225c65f905a4f8eb2552160748d31ad2abaa882a
 
 function RequestBlood() {
   const navigate = useNavigate();
@@ -89,11 +86,7 @@ function RequestBlood() {
       };
 
       const response = await axios.post(
-<<<<<<< HEAD
         `${API_BASE_URL}/api/Requester`,
-=======
-        "http://localhost:8080/api/Requester",
->>>>>>> 225c65f905a4f8eb2552160748d31ad2abaa882a
         requestData,
         {
           headers: {
