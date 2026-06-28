@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
+<<<<<<< HEAD
 import API_BASE_URL from "../api";
+=======
+>>>>>>> 225c65f905a4f8eb2552160748d31ad2abaa882a
 
 function Login({ setAuth }) {
   const [email, setEmail] = useState("");
@@ -14,7 +17,11 @@ function Login({ setAuth }) {
     setIsLoading(true);
     
     try {
+<<<<<<< HEAD
       const res = await axios.post(`${API_BASE_URL}/api/Login`, {
+=======
+      const res = await axios.post("http://localhost:8080/api/Login", {
+>>>>>>> 225c65f905a4f8eb2552160748d31ad2abaa882a
         email: email,
         password: password
       });

@@ -14,7 +14,11 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
+<<<<<<< HEAD
 @CrossOrigin(origins = "*")
+=======
+@CrossOrigin(origins = "http://localhost:3000")
+>>>>>>> 225c65f905a4f8eb2552160748d31ad2abaa882a
 @RestController
 @RequestMapping("/api")
 public class Controllerlayer{

@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import API_BASE_URL from "../api";
+=======
+// pages/Register.js
+import React, { useState } from "react";
+import axios from "axios";
+import { useNavigate, Link } from "react-router-dom";
+>>>>>>> 225c65f905a4f8eb2552160748d31ad2abaa882a
 
 function Register() {
   const [username, setUsername] = useState("");
@@ -15,7 +22,11 @@ function Register() {
     setIsLoading(true);
     
     try {
+<<<<<<< HEAD
       const res = await axios.post(`${API_BASE_URL}/api/Register`, {
+=======
+      const res = await axios.post("http://localhost:8080/api/Register", {
+>>>>>>> 225c65f905a4f8eb2552160748d31ad2abaa882a
         username,
         email,
         password,

@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+<<<<<<< HEAD
 import API_BASE_URL from "../api";
+=======
+>>>>>>> 225c65f905a4f8eb2552160748d31ad2abaa882a
 
 function RegisterDonor() {
   const navigate = useNavigate();
@@ -128,7 +131,11 @@ function RegisterDonor() {
       console.log("User ID:", currentUser.userId);
 
       const response = await axios.post(
+<<<<<<< HEAD
         `${API_BASE_URL}/api/Donors/${currentUser.userId}`,
+=======
+        `http://localhost:8080/api/Donors/${currentUser.userId}`,
+>>>>>>> 225c65f905a4f8eb2552160748d31ad2abaa882a
         donorData, 
         {
           timeout: 10000,
