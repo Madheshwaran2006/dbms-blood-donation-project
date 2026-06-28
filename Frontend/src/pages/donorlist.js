@@ -10,6 +10,7 @@ function DonorList() {
   const [loading, setLoading] = useState(true);
   const [notifying, setNotifying] = useState(false);
   const [notificationStatus, setNotificationStatus] = useState("");
+  // eslint-disable-next-line no-unused-vars
   const [error, setError] = useState("");
   const [searchParams, setSearchParams] = useState({
     bloodGroup: "",
@@ -122,6 +123,7 @@ function DonorList() {
     }
   };
 
+  // eslint-disable-next-line no-unused-vars
   const handleSearchManual = (e) => {
     e.preventDefault();
     if (searchParams.bloodGroup && searchParams.location) {
